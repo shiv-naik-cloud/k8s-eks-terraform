@@ -1,0 +1,39 @@
+# --- Terraform ---
+# Local .terraform directories (downloaded modules & providers)
+**/.terraform/*
+
+# State files — CONTAIN SENSITIVE DATA, never commit
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Variable files that may contain secrets
+*.tfvars
+*.tfvars.json
+
+# Terraform override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform lock info (keep .terraform.lock.hcl, but ignore CLI logs)
+.terraformrc
+terraform.rc
+
+# --- Misc ---
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Kube config (in case it ever lands here)
+kubeconfig*
+*.kubeconfig
